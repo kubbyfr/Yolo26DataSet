@@ -1,0 +1,19 @@
+# 自定义数据集示例（YOLO 格式）
+# 目录结构：
+# datasets/my_dataset/
+# ├── images/train/*.jpg
+# ├── images/val/*.jpg
+# ├── labels/train/*.txt
+# └── labels/val/*.txt
+#
+# 标签文件每行: class_id cx cy w h（归一化到 0-1）
+
+path: dataset/fall
+train: images/train
+val: images/val
+test: # images/test
+
+names:
+  0: FallDetected
+  1: Walking
+  2: Sitting
